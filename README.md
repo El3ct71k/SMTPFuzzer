@@ -7,7 +7,9 @@ The SMTP Fuzzer will connect to a given mail server and use a wordlist to enumer
 * Fuzzing 127.0.0.1 with `users.txt` file:
 
 `smtpfuzzer.py 127.0.0.1 users.txt`
+
 * Fuzzing 127.0.0.1 with `users.txt` file verbosely:
+
 `smtpfuzzer.py 127.0.0.1 users.txt -v`
 
 * Fuzzing 127.0.0.1 with `users.txt` file verbosely with 100 threads:

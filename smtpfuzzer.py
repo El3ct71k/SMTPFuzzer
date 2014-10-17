@@ -63,7 +63,7 @@ def vrfy_command(s, user):
 		if is not exist and the verbose flag is in false position, continue
 	"""
     vrfy = s.vrfy(user)
-    if vrfy[0] is 252:
+    if str(vrfy[0]).startswith('25'):
         LOGGER.info(vrfy[1])
     else:
         LOGGER.debug(vrfy[1])

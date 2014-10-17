@@ -78,7 +78,7 @@ def main(target, users_file, pool_size=50, verbose=False):
         LOGGER.info("Connected successfully!")
         vrfy = partial(vrfy_command, s)
         res = [res for res in p.imap_unordered(vrfy, get_users(users_file))]
-		if res:
+        if res:
 			LOGGER.info("Done!")
 
     except socket.error:
